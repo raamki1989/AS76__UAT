@@ -1,0 +1,7 @@
+|===
+|Component|Value
+
+|Device ID|XXYYZZ
+
+|Package Version|xx.yy
+|===
