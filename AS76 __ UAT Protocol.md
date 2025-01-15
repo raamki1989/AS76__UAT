@@ -77,61 +77,19 @@ Each test case of this validation protocol is derived from a user requirement. E
 |  |  |  | Enter invalid user name | The user name shall be accepted |  |  |  |
 |  |  |  | Enter an invalid password.  | The entered password shall be accepted |  |  |  |
 |  |  |  | Select "Sign in" | The login to the reporting application shall not  be successful and an error message indicating invalid login shall be displayed |  |  |  |
-| UT.GEN.006 | UR.GEN.002 | Login to the admin application with valid credentials | Open the Browser and enter the URL of the application | The application shall get opened and the login page shall be displayed.  |  |  |  |
-|  |  |  | Enter a valid user name.  | The user name shall be accepted |  |  |  |
-|  |  |  | Enter valid password | The entered password shall be accepted |  |  |  |
-|  |  |  | Select "Sign in" | The login to the admin application shall be successful |  |  |  |
-| UT.GEN.007 | UR.GEN.002 | Login to the admin application with invalid credentials | Open the Browser and enter the URL of the application | The application shall get opened and the login page shall be displayed.  |  |  |  |
-|  |  |  | Enter invalid user name | The user name shall be accepted |  |  |  |
-|  |  |  | Enter an invalid password.  | The entered password shall be accepted |  |  |  |
-|  |  |  | Select "Sign in" | The login to the admin shall not  be successful and an error message indicating invalid login shall be displayed |  |  |  |
-| UT.GEN.008 | UR.GEN.003 | Create new users with different roles | Login to the admin application with valid credentials | The login shall be successful |  |  |  |
-|  |  |  | Selet “Users”  | The list of users shall be displayed along with the CTA to create new user |  |  |  |
-|  |  |  | Select “Create user.” | The options to enter the details of the user shall be displayed |  |  |  |
-|  |  |  | Enter  Name Email ID Contact number Username Password  | All the submitted details shall be accepted |  |  |  |
-|  |  |  | Select a role and select "Create new user.” | The popup to confirm the user creation shall be displayed |  |  |  |
-|  |  |  | Select “Create and copy”.  | The user shall be created, and the username and password shall be copied. The user shall  be able to paste the copied credentials wherever needed |  |  |  |
-| UT.GEN.009 | UR.GEN.003, UR.GEN.002 | Manage the user details | Login to the admin application | Login shall be successful |  |  |  |
-|  |  |  | Select the user whose details need to be updated | The details of the user shall be displayed  |  |  |  |
-|  |  |  | Update the details | The details of all the fields except the user name shall be editable by the user.  |  |  |  |
-|  |  |  | Select "Update.” | The popup to confirm the user update shall be displayed |  |  |  |
-|  |  |  | Select “Update and copy.” | The user details shall be updated, and the username and password shall be copied. The user shall  be able to paste the copied credentials wherever needed |  |  |  |
-| UT.GEN.010 | UR.GEN.004 | Logout of the device application | Select the user profile icon present in the toolbar | The following user profile options shall be displayed. Tiem zone Change password Logout  |  |  |  |
+| UT.GEN.006 | UR.GEN.004 | Logout of the device application | Select the user profile icon present in the toolbar | The following user profile options shall be displayed. Tiem zone Change password Logout  |  |  |  |
 |  |  |  | Select “Logout” | The user shall be logged out of the device. If there are any system operations in process, then those shall get terminated.  |  |  |  |
-| UT.GEN.011 | UR.GEN.004 | Logout of the reporting application | Select the user profile icon present in the list report page | The following user profile options shall be displayed. Tiem zone Change password Logout  |  |  |  |
+| UT.GEN.007 | UR.GEN.004 | Logout of the reporting application | Select the user profile icon present in the list report page | The following user profile options shall be displayed. Tiem zone Change password Logout  |  |  |  |
 |  |  |  | Select “Logout” | The user shall be logged out of the application.  |  |  |  |
-| UT.GEN.012 | UR.GEN.004 | Logout of the admin application | Select the user profile icon.  | The following user profile options shall be displayed. Tiem zone Change password Logout  |  |  |  |
-|  |  |  | Select “Logout” | The user shall be logged out of the application.  |  |  |  |
-| UT.GEN.013 | UR.GEN.002 | Change the password in the device application | Select the user profile icon | The following user profile options shall be displayed. Tiem zone Change password Logout |  |  |  |
-|  |  |  | Select “Change password.” | The options to enter the current password and new password shall be displayed |  |  |  |
-|  |  |  | Enter the current password and new password | The details entered shall be validated and accepted. |  |  |  |
-|  |  |  | Select “Confirm password” | The password shall get changed, and the user shall be able to login with the new password.  |  |  |  |
-| UT.GEN.014 | UR.GEN.002 | Change the password in the reporting application | Select the user profile icon | The following user profile options shall be displayed. Tiem zone Change password Logout |  |  |  |
-|  |  |  | Select"Change password.” | The options to enter the current password and new password shall be displayed |  |  |  |
-|  |  |  | Enter the current password and new password | The details entered shall be validated and accepted. |  |  |  |
-|  |  |  | Select “Confirm password” | The password shall get changed, and the user shall be able to login with the new password.  |  |  |  |
-| UT.GEN.015 | UR.GEN.002 | Change the password in the admin application | Select the user profile icon | The following user profile options shall be displayed. Tiem zone Change password Logout |  |  |  |
-|  |  |  | Select “Change password.” | The options to enter the current password and new password shall be displayed |  |  |  |
-|  |  |  | Enter the current password and new password| The details entered shall be validated and accepted. |  |  |  |
-|  |  |  | Select “Confirm Password” | The password shall get changed, and the user shall be able to login with the new password.  |  |  |  |
-| UT.GEN.016 | UR.GEN.003 | Change the password in the device during the first login | Login to the device with the credentials shared by the admin | Login shall be successful |  |  |  |
-|  |  |  | Enter the current password and new password | The details entered shall be validated and accepted. |  |  |  |
-|  |  |  | Select “Confirm password” | The password shall get changed, and the user shall be able to login with the new password.  |  |  |  |
-| UT.GEN.017 | UR.GEN.003 | Change the password in the reporting application during the first login | Login to the device with the credentials shared by the admin | Login shall be successful |  |  |  |
-|  |  |  | Enter the current password and new password | The details entered shall be validated and accepted. |  |  |  |
-|  |  |  | Select “Confirm password” | The password shall get changed, and the user shall be able to login with the new password.  |  |  |  |
-| UT.GEN.018 | UR.GEN.003 | Change the password in the admin application during the first login | Login to the device with the credentials shared by the admin | Login shall be successful |  |  |  |
-|  |  |  | Enter the current password and new password | The details entered shall be validated and accepted. |  |  |  |
-|  |  |  | Select “Confirm password” | The password shall get changed, and the user shall be able to login with the new password.  |  |  |  |
-| UT.GEN.019 | UR.GEN.005 | Connect the device to the network using WIFI | Select the WIFI icon | The list of networks available for connection shall be displayed |  |  |  |
+| UT.GEN.008 | UR.GEN.005 | Connect the device to the network using WIFI | Select the WIFI icon | The list of networks available for connection shall be displayed |  |  |  |
 |  |  |  | Select a network from the list | The option to enter the password to connect to the network shall be displayed |  |  |  |
 |  |  |  | Enter the password | The entered password shall be validated, and the device shall be connected to the selected network. This network shall be remembered by the system and shall get reconnected.  |  |  |  |
-| UT.GEN.020 | UR.GEN.005 | Connect the device to a network using ethernet | Connect an ethernet cable to the device | The system shall detect the connection and connect to the network automatically.  |  |  |  |
-| UT.GEN.021 | UR.GEN.005 | Connect an external display to the system | Connect an external monitor to the device through the HDMI port | The user shall be able to perform the reporting and the admin activities by accessing the application from the monitor.  |  |  |  |
-| UT.GEN.022 | UR.GEN.005 | Connect to external input peripherals | Connect an external mouse and keyboard to the device | The user shall be able to provide inputs on the UI using the external mouse and keyboard.  |  |  |  |
-| UT.GEN.023 | UR.GEN.001 | Power off the device | Select the power menu | The following power menu options shall be displayed Shutdown Restart |  |  |  |
+| UT.GEN.009 | UR.GEN.005 | Connect the device to a network using ethernet | Connect an ethernet cable to the device | The system shall detect the connection and connect to the network automatically.  |  |  |  |
+| UT.GEN.010 | UR.GEN.005 | Connect an external display to the system | Connect an external monitor to the device through the HDMI port | The user shall be able to perform the reporting and the admin activities by accessing the application from the monitor.  |  |  |  |
+| UT.GEN.011 | UR.GEN.005 | Connect to external input peripherals | Connect an external mouse and keyboard to the device | The user shall be able to provide inputs on the UI using the external mouse and keyboard.  |  |  |  |
+| UT.GEN.012 | UR.GEN.001 | Power off the device | Select the power menu | The following power menu options shall be displayed Shutdown Restart |  |  |  |
 |  |  |  | Select "Shutdown" | The system shall get powered off, and all the system operations (if any) shall be terminated.  |  |  |  |
-| UT.GEN.024 | UR.GEN.001 | Restart the device | Select the power menu | The following power menu options shall be displayed Shutdown Restart |  |  |  |
+| UT.GEN.013 | UR.GEN.001 | Restart the device | Select the power menu | The following power menu options shall be displayed Shutdown Restart |  |  |  |
 |  |  |  | Select "Restart" | The system shall get restarted, and all the system operations (if any) shall be terminated before the system powers off.  |  |  |  |
 
 ## Scanning Requirements
@@ -168,10 +126,10 @@ Each test case of this validation protocol is derived from a user requirement. E
 | UT.RPT.005 | UR.REP.001 | Remove the bookmark for a report | In the list of reports, for a report that is already bookmarked, select the bookmark icon | The bookmark shall be removed for that report.  |  |  |  |
 | UT.RPT.006 | UR.REP.011 | Assign a report to review | Open a report | The report shall get opened |  |  |  |
 |  |  |  | Select a reviewer from the dropdown | A conformation for report assignment shall be displayed |  |  |  |
-|  |  |  | Select "Confirm" | The report shall get assigned to the selected reviewer |  |  |  |
+|  |  |  | Select "Re-assign" | The report shall get assigned to the selected reviewer |  |  |  |
 | UT.RPT.007 | UR.REP.011 | Unassign a report from a reviewer | Open an assigned report | The report shall get opened |  |  |  |
 |  |  |  | Select the unassign icon | A confirmation for report unassignment shall be displayed.  |  |  |  |
-|  |  |  | Select "Confirm" | The reviewer shall be unassinged froom the report,  |  |  |  |
+|  |  |  | Select "Re-assign" | The reviewer shall be unassinged froom the report,  |  |  |  |
 | UT.RPT.008 | UR.REP.002 UR.REP.004 UR.REP.006 | View the results of a report | Open a report from the list of reports | The report shall get opened |  |  |  |
 |  |  |  | Select "Slide info" | The details of the slide shall be displayed |  |  |  |
 |  |  |  | Select "WBC" | The count and percentage of WBC cell types shall be displayed along with the patches |  |  |  |
@@ -195,28 +153,26 @@ Each test case of this validation protocol is derived from a user requirement. E
 |  |  |  | Enter the size of the circle below 5 or above 20 microns with or without decimal. | An error message indicating that the size is invalid shall be displayed.  |  |  |  |
 | UT.RPT.015 | UR.REP.002 UR.REP.004 UR.REP.006 | View the area equivalent to 40x or 100x | Select "40x" from the option | A circle indicating the area equivalent to 40x shall be displayed and the user shall be able to move this circle throughout the stitched image.  |  |  |  |
 |  |  |  | Select "100x" from the option | A circle indicating the area equivalent to 100x shall be displayed and the user shall be able to move this circle throughout the stitched image.  |  |  |  |
-| UT.RPT.016 | UR.REP.013 | View CBC report | Open a report and  select “View CBC report” | The CBC report shall be displayed. If there are no cbc report, then appropriate message shall be displayed |  |  |  |
-| UT.RPT.017 | UR.REP.001 | View history of changes | Select “History” in a report that has changes | The modifications performed on the report shall be displayed.  |  |  |  |
-| UT.RPT.018 | UR.REP.002 UR.REP.003 | Review WBC differential count  | Open a self-assigned report | The report shall get opened |  |  |  |
+| UT.RPT.016 | UR.REP.002 UR.REP.003 | Review WBC differential count  | Open a self-assigned report | The report shall get opened |  |  |  |
 |  |  |  | Select one or more patches of WBCs from a cell type and reclassify it to another cell type | The cells shall get classified from one type to another type and the visual cue shall be displayed.  |  |  |  |
-| UT.RPT.019 | UR\>REP.004 UR.REP.005 | Review RBC cells | Open a self-assigned report | The report shall get opened |  |  |  |
+| UT.RPT.017 | UR\>REP.004 UR.REP.005 | Review RBC cells | Open a self-assigned report | The report shall get opened |  |  |  |
 |  |  |  | Modify the grades for one or more cell types | The grades shall get modified, and the visual cue shall be displayed.  |  |  |  |
-| UT.RPT.020 | UR.REP.006 UR.REP.007 | Review Platelet counts | Update the counts of N,M,G for one or more FOVs | The counts shall get updated and there shall be an undo option to reverse the changes |  |  |  |
-| UT.RPT.021 | UR.REP.006 UR.REP.007  | Review Platelet morphology | Select one or more patches from a cell type and reclassify it to another cell type | The cells shall get classified from one type to another type and the visual cue shall be displayed.  |  |  |  |
-| UT.RPT.022 | UR.REP.009 | Add PS impressions | Enter the PS impressions for  WBC Morphology RBC morphology Platelet morphology Hemoparasites Impressions | All the data entered shall be accepted and shall be reflected in the final report once approved.  |  |  |  |
-| UT.RPT.023 | UR.REP.010, UR.REP.013 | Approve a report with manual DC | In the summary of the report, select “Manual DC” | The values of calculated shall be copied to the column of manual DC |  |  |  |
+| UT.RPT.018 | UR.REP.006 UR.REP.007 | Review Platelet counts | Update the counts of N,M,G for one or more FOVs | The counts shall get updated and there shall be an undo option to reverse the changes |  |  |  |
+| UT.RPT.019 | UR.REP.006 UR.REP.007  | Review Platelet morphology | Select one or more patches from a cell type and reclassify it to another cell type | The cells shall get classified from one type to another type and the visual cue shall be displayed.  |  |  |  |
+| UT.RPT.020 | UR.REP.009 | Add PS impressions | Enter the PS impressions for  WBC Morphology RBC morphology Platelet morphology Hemoparasites Impressions | All the data entered shall be accepted and shall be reflected in the final report once approved.  |  |  |  |
+| UT.RPT.021 | UR.REP.010, UR.REP.013 | Approve a report with manual DC | In the summary of the report, select “Manual DC” | The values of calculated shall be copied to the column of manual DC |  |  |  |
 |  |  |  | Enter the values  | The values entered shall be validated and accepted |  |  |  |
 |  |  |  | Select “Approve” | The approval process for the report shall get initiated |  |  |  |
 |  |  |  | Approve without adding images | The report shall get approved, and shall be submitted to LIMS (if configured) and the PDF of the report shall be generated.  |  |  |  |
-| UT.RPT.024 | UR.REP.014,  UR.REP.013 | Approve a report by adding supporting images | Select “Approve” in a self-assigned report | The approval process for the report shall get initiated.  |  |  |  |
+| UT.RPT.022 | UR.REP.014,  UR.REP.013 | Approve a report by adding supporting images | Select “Approve” in a self-assigned report | The approval process for the report shall get initiated.  |  |  |  |
 |  |  |  | Select “Add supporting images.” | The options to add images for all the cell types shall be displayed as per the configured rules.  |  |  |  |
 |  |  |  | Modify the images for one or more cell types | The modified cell images shall be displayed in the preview |  |  |  |
 |  |  |  | Select “Approve” | The report shall get approved and shall get submitted to LIMS (if connected) and the PDF report shall get generated.  |  |  |  |
-| UT.RPT.025 | UR.REP.010 | Reject a report | Select “Reject” and select "Confirm.” | The report shall get rejected and the PDF shall not be generated for rejected reports |  |  |  |
-| UT.RPT.026 | UR.REP.012 | View original and modified version of the report | Open a report that is modified.  | The report shall get opened |  |  |  |
+| UT.RPT.023 | UR.REP.010 | Reject a report | Select “Reject” and select "Confirm.” | The report shall get rejected and the PDF shall not be generated for rejected reports |  |  |  |
+| UT.RPT.024 | UR.REP.012 | View original and modified version of the report | Open a report that is modified.  | The report shall get opened |  |  |  |
 |  |  |  | Select”View original: | The original report that does not contain the user modifications shall be displayed |  |  |  |
 |  |  |  | Select “View modified.” | The modified report that has the user modifications shall be displayed.  |  |  |  |
-| UT.RPT.027 | UR.REP.010 | Include or exclude Parameters in final report | In the preview of the report include or exclude  PS impressions RBC Platelets\\ And approve the report | The report shall get approved and the PDF of the report shall be generated as per the selections made.  |  |  |  |
+| UT.RPT.025 | UR.REP.010 | Include or exclude Parameters in final report | In the preview of the report include or exclude  PS impressions RBC Platelets\\ And approve the report | The report shall get approved and the PDF of the report shall be generated as per the selections made.  |  |  |  |
 |  |  |  |  |  |  |  |  |
 
 ## Product Lifecycle requirements
