@@ -196,9 +196,9 @@ Date of execution: 09-Jan-25
 # Results
 |Bug |Count|
 |--|--|
-|No of highest priority bugs||
-|No of high priority bugs||
-|No of medium priority bugs||
-|No of low priority bugs||
+|No of highest priority bugs|0|
+|No of high priority bugs|0|
+|No of medium priority bugs|3|
+|No of low priority bugs|0|
 
 There are no high or highest priority bug orsafety related issues observed. The test is considered as Pass. 
